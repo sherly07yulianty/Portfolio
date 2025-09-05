@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherly's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0 20px 0;
+    }
+    header h1 {
+      margin-bottom: 5px;
+    }
+    header p {
+      font-style: italic;
+      color: #555;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #34495e;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 10px 0 20px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    hr {
+      margin: 40px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+    ul {
+      margin: 5px 0 15px 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      background-color: #2c3e50;
+      color: white;
+      border-radius: 5px 5px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sherly's Portfolio</h1>
+  <p>Data Analytics & Data Science Projects: EDA, Predictive Modeling, Dashboards</p>
+</header>
+
+<section>
+  <p>
+    A portfolio showcasing projects in Data Analytics & Data Science, including data cleaning, EDA, statistical analysis, predictive modeling, and dashboards. Topics include e-commerce, and stock price prediction forecasting using Python, Excel, and Power BI.
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h2><a href="https://github.com/sherly07yulianty/Stock-Price-Modeling">Project 1: Stock Price Prediction for BIRD.JK</a></h2>
+  <p>This project analyzes and predicts the stock price of <b>BIRD.JK</b> using two models: <b>Markov Switching Autoregressive (MS-AR)</b> and <b>Prophet</b>.</p>
+
+  <table>
+    <tr><th>Model</th><th>MAPE</th></tr>
+    <tr><td>MS-AR</td><td>4.6%</td></tr>
+    <tr><td>Prophet</td><td>3.29%</td></tr>
+  </table>
+
+  <h3>Key Features</h3>
+  <ul>
+    <li>Data cleaning & preprocessing</li>
+    <li>Time series forecasting</li>
+    <li>Comparative analysis of two models</li>
+    <li>Visualization of actual vs predicted prices</li>
+  </ul>
+
+  <h3>Methodology</h3>
+  <ol>
+    <li>Data: Historical stock prices of BIRD.JK</li>
+    <li>Models: MS-AR & Prophet</li>
+    <li>Metric: Mean Absolute Percentage Error (MAPE)</li>
+  </ol>
+
+  <h3>Prediction Plots</h3>
+  <img src="https://github.com/sherly07yulianty/Stock-Price-Modeling/blob/main/prediksi_harga_saham_dengan_state_mape4.6.png" alt="MS-AR Prediction">
+  <img src="https://github.com/sherly07yulianty/Stock-Price-Modeling/blob/main/prediksi_harga_saham_error_baru2.png" alt="Prophet Prediction">
+
+  <h3>Insights</h3>
+  <p>Prophet model outperformed MS-AR in this dataset, achieving lower error. These results may support <b>investors in making stock-buying decisions</b>.</p>
+
+  <h3>Highlight</h3>
+  <p>The Prophet model achieved <b>3.29% MAPE</b>, making it more accurate for this stock.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2><a href="https://github.com/sherly07yulianty/Classification-Model/tree/main">Project 2: Diabetes Prediction using KNN, Random Forest, and Decision Tree</a></h2>
+  <p>Diabetes is a disease with a rising number of cases, causing <b>1.5 million deaths globally in 2019</b>. This project compares three classification methods: <b>KNN</b>, <b>Random Forest</b>, and <b>Decision Tree</b>.</p>
+
+  <h3>Key Features</h3>
+  <ul>
+    <li>Pregnancies, Glucose, Insulin, BMI, Age as features</li>
+    <li>Target variable: Outcome</li>
+    <li>Model evaluation with/without Min-Max normalization</li>
+  </ul>
+
+  <h3>Model Evaluation</h3>
+  <h4>Before Min-Max Normalization</h4>
+  <table>
+    <tr><th>Model</th><th>Accuracy</th><th>Computation Time (s)</th></tr>
+    <tr><td>KNN</td><td>74.07%</td><td>1.5739</td></tr>
+    <tr><td>Random Forest</td><td>78.01%</td><td>4.7255</td></tr>
+    <tr><td>Decision Tree</td><td><b>79.35%</b></td><td>3.4833</td></tr>
+  </table>
+
+  <h4>After Min-Max Normalization</h4>
+  <table>
+    <tr><th>Model</th><th>Accuracy</th><th>Computation Time (s)</th></tr>
+    <tr><td>KNN</td><td><b>77.53%</b></td><td>1.5288</td></tr>
+    <tr><td>Random Forest</td><td>75.46%</td><td>4.6285</td></tr>
+    <tr><td>Decision Tree</td><td>73.71%</td><td>3.2686</td></tr>
+  </table>
+
+  <h3>Conclusion</h3>
+  <p>KNN benefits significantly from Min-Max normalization, while Decision Tree performs better without it. These findings can guide future implementations of diabetes prediction systems.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2><a href="https://github.com/sherly07yulianty/-Brazilian-E-Commerce-Olist-Dashboard/tree/main">Project 3: Brazilian E-Commerce (Olist) Dashboard</a></h2>
+  <img src="https://github.com/sherly07yulianty/-Brazilian-E-Commerce-Olist-Dashboard/blob/main/Brazilian%20E-Commerce%20(Olist)%20Dashboard.png" alt="Dashboard Preview">
+
+  <h3>Key Insights</h3>
+  <ul>
+    <li><b>Total Sales:</b> R$13.59M from delivered orders</li>
+    <li><b>Total Delivered Orders:</b> 96K</li>
+    <li><b>Average Lead Time:</b> 12.50 days</li>
+    <li><b>On-Time Deliveries:</b> 93K (93.43%)</li>
+  </ul>
+
+  <h3>Dashboard Highlights</h3>
+  <ul>
+    <li>Top 20 Cities by Deliveries (São Paulo, Rio de Janeiro, Curitiba, etc.)</li>
+    <li>Shipping Efficiency by State</li>
+    <li>Sales Trend (Monthly)</li>
+    <li>On-Time vs Late Deliveries</li>
+    <li>Date Slicer for filtering</li>
+  </ul>
+
+  <h3>Tools & Techniques</h3>
+  <ul>
+    <li>Power BI Desktop</li>
+    <li>DAX for calculated measures</li>
+    <li>Data preprocessing: orders_dataset, order_items_dataset, customers_dataset</li>
+  </ul>
+
+  <h3>Conclusion</h3>
+  <p>The dashboard reveals <b>sales concentration in major cities</b> and a <b>strong on-time delivery rate (93%)</b>, providing insights for logistics optimization and regional strategy.</p>
+</section>
+
+<hr>
+
+<footer>
+  <p>© 2025 Sherly Yulianty – Data Analytics & Data Science Portfolio</p>
+</footer>
+
+</body>
+</html>
